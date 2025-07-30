@@ -1,5 +1,7 @@
 import { expect, it } from 'vitest'
+import { example } from '../lib/example'
 
 it('test', () => {
-  expect('test').toEqual('test')
+  const result = example(2)
+  expect(result).toEqual(4)
 })
